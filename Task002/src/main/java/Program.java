@@ -162,6 +162,8 @@ public class Program {
 //                    System.out.print(field[row][column] + "\t");
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -171,6 +173,8 @@ public class Program {
                 for (int row = field.length-1, column = columns; row >= 0 && column >= 0 ; row--, column--){
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -180,6 +184,8 @@ public class Program {
                 for (int row = rows, column = 0; row >= 0 && column <= field[0].length - 1; row--, column++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -189,6 +195,8 @@ public class Program {
                 for (int row = field.length - 1, column = columns; row >= 0 && column <= field[0].length - 1; row--, column++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -200,6 +208,8 @@ public class Program {
                 for (int column = columns, row = 0; column <= field[0].length - 1 && row <= field.length - 1; column++, row++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -209,6 +219,8 @@ public class Program {
                 for (int row = rows, column = 0; row <= field.length - 1 && column < field[0].length; row++, column++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -218,6 +230,8 @@ public class Program {
                 for (int column = columns, row = 0; column >= 0 && row <= field.length - 1; column--, row++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -227,6 +241,8 @@ public class Program {
                 for (int column = field[0].length - 1, row = rows; column <= field[0].length - 1 && row <= field.length - 1; column--, row++) {
                     if(field[row][column]== c)
                         count++;
+                    else
+                        count = 0;
                     if(count == WIN_COUNT)
                         return true;
                 }
@@ -238,6 +254,8 @@ public class Program {
             for (int column = 0; column < field[0].length; column++) {
                 if(field[row][column]== c)
                     count++;
+                else
+                    count = 0;
                 if(count == WIN_COUNT)
                     return true;
             }
@@ -248,6 +266,8 @@ public class Program {
             for (int row = 0; row < field.length; row++) {
                 if(field[row][column]== c)
                     count++;
+                else
+                    count = 0;
                 if(count == WIN_COUNT)
                     return true;
             }
